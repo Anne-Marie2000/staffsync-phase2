@@ -3,8 +3,10 @@
 /**
  * app/dashboard/page.js
  * Description: Landing page after login. Fetches employees and departments
- * concurrently (Promise.all) and shows dashboard statistics, recent employees,
- * and department information.
+ * concurrently (Promise.all) and derives summary statistics client-side:
+ * total employees, active employees, department count, and the five most
+ * recently added employees. Also renders a simple bar-style department
+ * overview using div widths 
  */
 
 import { useEffect, useState } from "react";
