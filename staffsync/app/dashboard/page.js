@@ -3,10 +3,8 @@
 /**
  * app/dashboard/page.js
  * Description: Landing page after login. Fetches employees and departments
- * concurrently (Promise.all) and derives summary statistics client-side:
- * total employees, active employees, department count, and the five most
- * recently added employees. Also renders a simple bar-style department
- * overview using div widths (no charting library needed for this scope).
+ * concurrently (Promise.all) and shows dashboard statistics, recent employees,
+ * and department information.
  */
 
 import { useEffect, useState } from "react";
@@ -81,7 +79,7 @@ export default function DashboardPage() {
           </Link>
         </div>
 
-        {/* Department overview chart (simple bar visualization) */}
+        {/* Department overview */}
         <div className="rounded-xl border border-slate-200 bg-white p-5">
           <h2 className="mb-3 font-semibold text-slate-700">
             Department Overview
